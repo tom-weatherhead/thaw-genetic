@@ -23,7 +23,7 @@ class GeneticAlgorithm<T extends IChromosome> implements IGeneticAlgorithm<T> {
 	private readonly maxPopulationSize: number;
 	private readonly numBreedingsPerGeneration: number;
 	private readonly numMutationsPerGeneration: number;
-	private readonly goalStateThreshold: number;
+	// private readonly goalStateThreshold: number;
 	private readonly stopIfNoNewBestInNGenerations: number;
 
 	private readonly fnDisplayMessage: (message: string) => void;
@@ -50,7 +50,7 @@ class GeneticAlgorithm<T extends IChromosome> implements IGeneticAlgorithm<T> {
 		this.maxPopulationSize = options.maxPopulationSize;
 		this.numBreedingsPerGeneration = options.numBreedingsPerGeneration;
 		this.numMutationsPerGeneration = options.numMutationsPerGeneration;
-		this.goalStateThreshold = options.goalStateThreshold;
+		// this.goalStateThreshold = options.goalStateThreshold;
 		this.stopIfNoNewBestInNGenerations =
 			options.stopIfNoNewBestInNGenerations;
 
